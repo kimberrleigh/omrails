@@ -3,6 +3,6 @@ class PagesController < ApplicationController
   end
 
   def about
-  	# content in rules
+  	# put content here
   end
 end

@@ -1,19 +1,28 @@
-/* Change this font eventually
-$baseFontFamily: Oxygen;
-@import url(http://fonts.googleapis.com/css?family=Oxygen); */
+@import "bootstrap";
+@import "bootstrap-responsive";
+html, body {
+  height: 100%;
+}
 
+.navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    top: 0;
+}
 
-@import 'bootstrap';
-body {
+.container{
 	padding-top: 60px;
 }
-@import 'bootstrap-responsive';
 
-.footer {
-	margin-top: 50px;
-
-	color: $grayLight;
-	a {
-		color: $gray;
-	}
+#wrap {
+  min-height: 100%;
 }
+
+#main {
+  overflow:auto;
+  padding-bottom:150px;
+  margin-bottom: 50px;
+}
+
