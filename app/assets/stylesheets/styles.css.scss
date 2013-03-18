@@ -1,8 +1,19 @@
+
+$baseFontFamily: Tauri;
+@import url(http://fonts.googleapis.com/css?family=Tauri);
+
+$textColor: #2E2E2E;
+
 @import "bootstrap";
 @import "bootstrap-responsive";
 html, body {
   height: 100%;
 }
+
+h1 {
+color: #6A0888;
+font-weight: bold;
+} 
 
 .navbar-fixed-top {
     position: fixed;

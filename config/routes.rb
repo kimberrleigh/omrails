@@ -2,6 +2,9 @@ Omrails::Application.routes.draw do
   get "pages/home"
 
   get 'about' => 'pages#about'
+  get 'contactus' => 'pages#contactus'
+  get 'help' => 'pages#help'
+  get 'login' => 'pages#login'
   root :to => 'pages#home'
 
   # The priority is based upon order of creation:
