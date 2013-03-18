@@ -3,16 +3,10 @@ class PagesController < ApplicationController
   end
 
   def about
-  	# put content here
   end
 
-  def contactus
-  end
-
-  def help
-  end
-
-def login
+def devise_for
 end
+
 
 end

@@ -1,11 +1,10 @@
 Omrails::Application.routes.draw do
-  get "pages/home"
-
+ devise_for :users
   get 'about' => 'pages#about'
-  get 'contactus' => 'pages#contactus'
-  get 'help' => 'pages#help'
-  get 'login' => 'pages#login'
-  root :to => 'pages#home'
+
+  root :to => 'Pages#home'
+
+  get 'sign_up' => 'devise/registrations#new'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

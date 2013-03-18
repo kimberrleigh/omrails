@@ -1,4 +1,7 @@
-
+<% if user_signed_in? %>
+<h1> You're logged in, welcome!</h1>
+<p> How have you been? ^_^ </p>
+<% else %>	
 	<div class="container">
 	<div class="jumbotron">
     <center><h1>Get Your Nerd On </h1>
@@ -7,7 +10,7 @@
     	<p>We can't wait to meet you! </p>
      </p>
 
-    <p> <%= link_to 'Come To The Dark Side',  "#" , class: "btn btn-large btn-inverse" %> </p>
+    <p> <%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-large btn-inverse" %> </p>
 	</center>
 </div>
 </div>
@@ -49,3 +52,4 @@
 
 </p>
 	</div>
+	<% end %>
