@@ -1,0 +1,17 @@
+<% if user_signed_in? %>
+<p></p>
+<% else %>	
+	<div class="container">
+	<div class="jumbotron">
+    <center><h1>Get Your Nerd On </h1>
+    <p>Join us today to connect with fellow geek girls.</p>
+    	<p>We embrace all aspects of nerd culture.</p>
+    	<p>We can't wait to meet you! </p>
+     </p>
+
+    <p> <%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-large btn-inverse" %> </p>
+	</center>
+</div>
+</div>
+
+	<% end %>
